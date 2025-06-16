@@ -18,11 +18,15 @@ After running these commands, you'll have a `DOCS` folder in your project contai
 
 ## Setting Up Git Shortcuts
 
-Make managing your documentation easier by setting up helpful git shortcuts. Run the following script:
+Make managing your documentation easier by setting up helpful git shortcuts.
+Run the appropriate setup script based on your operating system:
 
 ```bash
-# Run the setup script
-./DOCS/_meta/scripts/setup-docs-aliases.sh
+# On macOS or Linux:
+./DOCS/_meta/scripts/linux/setup-docs-aliases.sh
+
+# On Windows (PowerShell):
+./DOCS/_meta/scripts/win/setup-docs-aliases.ps1
 ```
 
 This script will create convenient git aliases to simplify working with your documentation.

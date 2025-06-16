@@ -14,7 +14,7 @@ cd "$REPO_ROOT" || exit 1
 
 # Esential variables
 #
-ALIAS_FILE="DOCS/_meta/config/git-docs-aliases.conf"
+ALIAS_FILE="DOCS/_meta/config/git-docs-aliases-linux.conf"
 ALIAS_PATH="$REPO_ROOT/$ALIAS_FILE"
 
 
@@ -24,7 +24,7 @@ ALIAS_PATH="$REPO_ROOT/$ALIAS_FILE"
 # Make sure the alias file exists
 if [ ! -f "$ALIAS_PATH" ]; then
   echo "❌ Alias file not found: $ALIAS_PATH"
-  echo "➡️  Please check if DOCS/config/git-docs-aliases.conf exists."
+  echo "➡️  Please check if DOCS/config/git-docs-aliases-linux.conf exists."
   exit 1
 fi
 

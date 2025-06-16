@@ -2,7 +2,7 @@
 
 # Essential confg
 #----------------
-REPO_FINAL_URL="git@github.com:eea/CLMS_documents_base.git"
+REPO_FINAL_URL="git@github.com:eea/CLMS_documents.git"
 DOC_PATH="DOCS"
 #----------------
 

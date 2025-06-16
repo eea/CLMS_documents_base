@@ -1,8 +1,14 @@
 #!/usr/bin/env bash
 set -e
 
+if ! command -v quarto >/dev/null 2>&1; then
+  echo "❌ Quarto is not installed or not in your PATH."
+  echo "➡️ Download it from: https://quarto.org/docs/get-started/"
+  exit 1
+fi
+
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-DOCS_DIR="$(cd "$SCRIPT_DIR/../.." && pwd)"
+DOCS_DIR="$(cd "$SCRIPT_DIR/../../.." && pwd)"
 META_DIR="$DOCS_DIR/_meta"
 
 # Track copied index.qmd files to clean up later
